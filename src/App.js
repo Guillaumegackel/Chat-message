@@ -19,16 +19,14 @@ function App() {
           photo:authUser.photoURL,
           email:authUser.email,
           displayName:authUser.displayName,
-        }))
+        }));
 
       }else {
         // user is logged out
         dispatch(logout())
       }
     })
-
-
-  },[])
+  },[]);
 
   return <div className="App">{user ?
       <Imessage /> : <Login/>}</div>;
