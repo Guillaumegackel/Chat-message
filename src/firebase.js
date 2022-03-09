@@ -1,4 +1,14 @@
 import firebase from 'firebase';
+import {getAuth} from 'firebase/auth'
+
+
+
+// import { initializeApp } from 'firebase/app';
+// import { getFirestore } from 'firebase/firestore/lite';
+// import { getAuth, GoogleAuthProvider } from "firebase/auth";
+
+
+
 
 const firebaseConfig = {
 	apiKey: "AIzaSyDzTX6hgLsK6_USz6rE0D8pU6dQGC6vI4A",
@@ -10,10 +20,12 @@ const firebaseConfig = {
 	measurementId: "G-L32EJGEHZ8"
   };
 
-  const firebaseApp = firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-  const auth = firebase.auth();
-  const provider = new firebase.auth.GoogleAuthProvider();
+//   const app = initializeApp(firebaseConfig);
 
-  export {auth, provider};
-  export default db;
+
+//   const db = firebase.Firestore();
+// //   const auth = getAuth();
+// //   const provider = new GoogleAuthProvider();
+
+
+  export default firebase;
