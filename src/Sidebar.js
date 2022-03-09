@@ -10,13 +10,14 @@ import { auth } from "./firebase";
 
 function Sidebar() {
 const user =useSelector(selectUser);
+console.log(user);
 
   return (
     <div className="sidebar">
       <div className="sidebar_header">
         <Avatar 
         onClick={()=> auth.signOut()} 
-        src={user.photo} 
+        src={user.photo}
         className="sidebar_avatar" />
         <div className="sidebar_input">
           <SearchIcon />
