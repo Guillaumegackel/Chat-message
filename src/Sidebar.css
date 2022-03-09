@@ -36,6 +36,8 @@ outline-width:0;
 ;
 }
 
+
+/* Webkit to erase scroll bar for Chrome and some convenience for FireFox / Edge / Opera */
 .sidebar_chats{
 	overflow: scroll;
 	overflow-x: hidden;
